@@ -11,7 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
-<body>
+
+    <div class="hero">
+        <h1>Il mio sito Full Stack</h1>
+        <p>Scopri le mie competenze nello sviluppo Full Stack</p>
+    </div>
+
     <div class="menu">
         <a href="#backend">Sviluppo Backend</a>
         <a href="#frontend">Sviluppo Frontend</a>
@@ -25,13 +30,35 @@
                 <h2>Sviluppo Backend</h2>
                 <p>Competenze in Node.js, Express.js, Python, Django, Ruby on Rails, ecc.</p>
             </div>
+            <div class="card">
+                <img src="/img/back-end-developer-1024x512.png" alt="Backend Development">
+                <h2>Sviluppo Backend</h2>
+                <p>Competenze in Node.js, Express.js, Python, Django, Ruby on Rails, ecc.</p>
+            </div>
+            <div class="card">
+                <img src="/img/back-end-developer-1024x512.png" alt="Backend Development">
+                <h2>Sviluppo Backend</h2>
+                <p>Competenze in Node.js, Express.js, Python, Django, Ruby on Rails, ecc.</p>
+            </div>
         </div>
         <div class="section" id="frontend">
             <div class="card">
                 <img src="/img/1615533694_frontendd.svg" alt="Frontend Development">
                 <h2>Sviluppo Frontend</h2>
                 <p>Competenze in HTML, CSS, Javascript, React.js, Vue.js, Angular.js, ecc.</p>
-                </div>
+                
+            </div>
+            <div class="card">
+                <img src="/img/1615533694_frontendd.svg" alt="Frontend Development">
+                <h2>Sviluppo Frontend</h2>
+                <p>Competenze in HTML, CSS, Javascript, React.js, Vue.js, Angular.js, ecc.</p>
+                
+            </div>
+            <div class="card">
+                <img src="/img/1615533694_frontendd.svg" alt="Frontend Development">
+                <h2>Sviluppo Frontend</h2>
+                <p>Competenze in HTML, CSS, Javascript, React.js, Vue.js, Angular.js, ecc.</p>
+                
             </div>
         </div>
         <div class="section" id="database">
@@ -40,8 +67,48 @@
                 <h2>Gestione Database</h2>
                 <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc.</p>
             </div>
+            <div class="card">
+                <img src="/img/dbms-image-1.png" alt="Database Management">
+                <h2>Gestione Database</h2>
+                <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc.</p>
+            </div>
+            <div class="card">
+                <img src="/img/dbms-image-1.png" alt="Database Management">
+                <h2>Gestione Database</h2>
+                <p>Competenze in MySQL, PostgreSQL, MongoDB, Firebase, ecc.</p>
+            </div>
         </div>
     </div>
+    <div class="section" id="oop">
+        <div class="card">
+            <img src="oop.png" alt="Object-Oriented Programming">
+            <h2>Programmazione orientata agli oggetti</h2>
+            <p>Competenze in Java, C++, Python, ecc.</p>
+        </div>
+        <div class="card">
+            <img src="oop.png" alt="Object-Oriented Programming">
+            <h2>Programmazione orientata agli oggetti</h2>
+            <p>Competenze in Java, C++, Python, ecc.</p>
+        </div>
+        <div class="card">
+            <img src="oop.png" alt="Object-Oriented Programming">
+            <h2>Programmazione orientata agli oggetti</h2>
+            <p>Competenze in Java, C++, Python, ecc.</p>
+        </div>
+    </div>
+    <div class="section" id="contact">
+        <h2>Contattami</h2>
+        <form action="/submit_form" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Invia">
+        </form>
+    </div>
+
     
 </body>
 </html>

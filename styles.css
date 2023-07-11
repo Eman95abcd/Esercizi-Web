@@ -65,3 +65,52 @@ body {
     width: 100%;
     height:  auto;
 }
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    color: #fff;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+#contact {
+    width: 100%;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact label {
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #444;
+}
