@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="/script.js"></script>
 
 </head>
 <body>
@@ -33,21 +34,27 @@
             <h2>Le mie competenze</h2>
             <div class="skill">
                 <p>HTML</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 90%"></div>
+                <div class="progress" data-value="90%">
+                    <div class="progress-bar" style="width: 90%"> <span>90%</span></div>
+                    
                 </div>
+               
             </div>
             <div class="skill">
                 <p>CSS</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 85%"></div>
+                <div class="progress" data-value="15%">
+                    <div class="progress-bar" style="width: 15%"><span>15%</span></div>
+                    
                 </div>
+                
             </div>
             <div class="skill">
                 <p>Javascript</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%"></div>
+                <div class="progress" data-value="80%">
+                    <div class="progress-bar" style="width: 80%"><span>80%</span></div>
+                    
                 </div>
+                
             </div>
         </div>
         <div class="section" id="backend">
@@ -55,7 +62,7 @@
             <div class="card">
                 <img src="/img/back-end-developer-1024x512.png" alt="Backend Development">
                 <h2>Sviluppo Backend</h2>
-               <!--<i class="fas fa-8x fa-brands fa-node" style="color: #00ad42;"></i> --> 
+                <!--<i class="fas fa-8x fa-brands fa-node" style="color: #00ad42;"></i> -->
                 <p>Competenze in Node.js, Express.js, Python, Django, Ruby on Rails, ecc.</p>
             </div>
             <div class="card">
@@ -136,7 +143,14 @@
             <input type="submit" value="Invia">
         </form>
     </div>
-
-    
+    <script>
+        window.addEventListener('DOMContentLoaded', (event)) => {
+            document.querySelectorAll('.progress').forEach(item) => {
+                let value = item.getAttribute('data-value');
+                let bar = item.querySelector('.progress-bar');
+                bar.style.width = value;
+            };
+        }
+    </script>
 </body>
 </html>
