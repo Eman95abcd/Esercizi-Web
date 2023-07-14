@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href=""> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', Helvetica, sans-serif;
+  outline: auto;
+  background-color: green;
+}
+
+/* Style the header */
+header {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  outline: auto;
+  
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+  outline: auto;
+}
+
+/* Style the navigation menu */
+nav {
+  display: flex;
+  justify-content: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #fafafa;
+  padding: 20px;
+  outline: auto;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  outline: auto;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+  outline: auto;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  outline: auto;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    outline: auto;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row; 
+}
+
+.menu  li {
+  color: white;
+}
+
+
+h1, p {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  width: 80%;
+  align-items: center;
+  position: relative;
+  left: 12em;
+}
+
+img {
+  align-items: center;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+  position: relative;
+  top: 5px;
+}
+
+nav {
+  background-color: whitesmoke;
+}
+
+header {
+  background: linear-gradient(to right, red, rgb(213, 236, 11));
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <div>
+    <nav >
+      <ul class="menu" >
+        <li><a href="#back">Sviluppo Backend</a></li>
+        <li><a href="#front">Sviluppo Frontend</a></li>
+        <li><a href="#database">Gestione Database</a></li>
+        <li><a href='#contatti'>Contatti</a></li>
+      </ul>
+    </nav>
+  </div>
+<header>
+  <h2>Emanuele Cappanera</h2>
+  <h3>Scopri le mie skills</h3>
+</header>
+
+<section>
+  <article>
+    <h1 id="back">Sviluppo Backend</h1>
+    <p><img src="/img/back-end-developer-1024x512.png" alt="Immagine di backend">
+      <ul>
+        <li>  Esperienza base del linugaggio di programmazione Java in riferimento a diversi elementi: variabili, tipi, metodi, classi, controllori di flusso, ecc... appresa mediante lezioni frontali dell'Ente F.ire.</li><br>
+        <li>  Eseperienza a livello teorico del linguaggio di programmazione C appresa mediante lezioni online (CS50).</li> <br>
+        <li>  Esperienza a livello teorico di Python appresa online sul sito freeCodeCamp.org. </li>
+      </ul>
+        
+    </p>
+  </article>
+</section>
+<section>
+  <article>
+    <h1 id="front">Sviluppo Frontend</h1>
+    <img src="/img/1615533694_frontendd.svg" alt="Immagine di frontend">
+    <ul>
+      <li>Esperienza base dei linguaggi di programmazione HTML e CSS appresa mediante lezioni frontali del corso di programmazione dell'Ente F.ire.</li>
+    </ul>
+  </article>
+</section>
+<section>
+  <article>
+    <h1 id="database">Gestione Database</h1>
+    <img src="/img/dbms-image-1.png" alt="Immagine di database" style="width: 1024px; height: 512px";>
+    <ul>
+      <li>
+        Esperienza a livello teorico di mySQL appresa online sul sito freeCodeCamp.org.
+      </li>
+    </ul>
+  </article>
+</section>
+
+<footer>
+  <p><div class="section" id="contatti">
+    <fieldset class="campo">
+        <legend>Contattami</legend>
+        <form action="/submit_form" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Invia">
+        </form>
+    </fieldset>
+   
+    
+</div></p>
+</footer>
+
+</body>
+</html>
