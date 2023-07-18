@@ -11,6 +11,11 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    
 }
 
 .menu a {
@@ -71,19 +76,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 50vh;
     color: #fff;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     text-align: center;
     flex-direction: column;
+    
 }
 
 .hero h1 {
     font-size: 3.5em;
+    margin: 5px;
+    
+}
+
+.hero h1:hover {
+    transform:rotate(360deg);
+    transition: 1s;
 }
 
 .hero p {
     font-size: 1.5em;
+    position: relative;
+    top: 10px;
 }
 
 #contact {
@@ -148,3 +163,33 @@ body {
     position: absolute;
     right: 10px;
 }
+
+#skills h2 {
+    position: relative;
+    left: 230px;
+    bottom: 40px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    width: 50%;
+    position: relative;
+    left: 45em;
+
+}
+
+@media screen and (min-width: 600px) {
+    .campo {
+        grid-template-columns: 1fr ;
+    }
+}
+
+
+
+
+
+

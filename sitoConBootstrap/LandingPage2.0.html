@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles2.0.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <nav class="navbar navbar-expand-sm bg-light sticky-top">
+      <ul class="menu navbar-nav">
+        <li class="nav-item"><a href="#back" class="nav-link">Sviluppo Backend</a></li>
+        <li class="nav-item"><a href="#front" class="nav-link">Sviluppo Frontend</a></li>
+        <li class="nav-item"><a href="#database" class="nav-link">Gestione Database</a></li>
+        <li class="nav-item"><a href="#contatti" class="nav-link">Contatti</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h2>Emanuele Cappanera</h2>
+      <h3>Scopri le mie <span>skills</span></h3>
+    </header>
+
+    <section  id="back">
+      <article>
+        <h1>Sviluppo Backend</h1>
+        <p><img src="/img/back-end-developer-1024x512.png" alt="Immagine di backend" style="width: 100%">  </p>
+        <ul>
+          <li> Esperienza base del linugaggio di programmazione Java in riferimento a diversi elementi:</li><p>  variabili, tipi,
+            metodi, classi, controllori di flusso, ecc... appresa mediante lezioni frontali dell'Ente F.ire.</p>
+          <li> Eseperienza a livello teorico del linguaggio di programmazione C appresa mediante lezioni online (CS50).</li> 
+          
+          <li> Esperienza a livello teorico di Python appresa online sul sito freeCodeCamp.org. </li>
+        </ul>
+        <div class="fontAwesome">
+          <i class="fa-brands fa-java fa-4x"></i>
+          <i class="fa-brands fa-python fa-4x"></i>
+        </div>
+
+
+
+      
+      </article>
+    </section>
+    <section>
+      <article>
+        <h1 id="front">Sviluppo Frontend</h1>
+        <img src="/img/1615533694_frontendd.svg" alt="Immagine di frontend">
+
+        <ul>
+          <li>Esperienza base dei linguaggi di programmazione HTML e CSS appresa mediante lezioni frontali del corso di
+            programmazione dell'Ente F.ire.</li>
+        </ul>
+        <div class="fontAwesome">
+          <i class="fa-brands fa-html5 fa-4x"></i>
+          <i class="fa-brands fa-css3-alt fa-4x"></i>
+        </div>
+      </article>
+    </section>
+    <section>
+      <article>
+        <h1 id="database">Gestione Database</h1>
+        <img src="/img/dbms-image-1.png" alt="Immagine di database" style="width: 100%; height: 512px;" ;>
+        <ul>
+          <li>
+            Esperienza a livello teorico di mySQL appresa online sul sito freeCodeCamp.org.
+          </li>
+          <div class="fontAwesome">
+            <i class="fa-solid fa-database fa-4x"></i>
+          </div>
+        </ul>
+      </article>
+    </section>
+
+    <footer>
+      <div class="section" id="contatti">
+        <fieldset class="campo">
+          <legend>Contattami</legend>
+          <form action="/submit_form" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Invia">
+          </form>
+        </fieldset>
+
+
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

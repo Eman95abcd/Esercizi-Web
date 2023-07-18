@@ -7,20 +7,15 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles - Copia.css"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="/script.js"></script>
-
+    
 </head>
 <body>
   <!--  <i class="fas fa-2x fa-wifi"></i>
     <i class="fa-brands fa-github"></i>  -->
-    <div class="hero">
-        <h1>Il mio sito Full Stack</h1>
-        <p>Scopri le mie competenze nello sviluppo Full Stack</p>
-    </div>
-
     <div class="menu">
         <a href="#backend">Sviluppo Backend</a>
         <a href="#frontend">Sviluppo Frontend</a>
@@ -29,39 +24,49 @@
         <a href="#contact">Contatti</a>
     </div>
 
+    <div class="hero">
+        <h1>Emanuele <br>
+           Cappanera</h1>
+        <p>Scopri le mie competenze nello sviluppo Full Stack</p>
+    </div>
+
+   
+
     <div class="container">
         <div class="section" id="skills">
             <h2>Le mie competenze</h2>
-            <div class="skill">
-                <p>HTML</p>
-                <div class="progress" data-value="90%">
-                    <div class="progress-bar" > <span>90%</span></div>
-                    
+                <div class="flex-container">
+                    <div class="skill">
+                        <p>HTML</p>
+                        <div class="progress" data-value="90%">
+                            <div class="progress-bar" > <span>90%</span></div>
+                            
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>CSS</p>
+                        <div class="progress" data-value="30%">
+                            <div class="progress-bar" ><span>30%</span></div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="skill">
+                        <p>Javascript</p>
+                        <div class="progress" data-value="80%">
+                            <div class="progress-bar"><span>80%</span></div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="skill">
+                        <p>Java</p>
+                        <div class="progress" data-value="70%">
+                            <div class="progress-bar"><span>70%</span></div>
+                        </div>
+                        
+                    </div>
                 </div>
-            </div>
-            <div class="skill">
-                <p>CSS</p>
-                <div class="progress" data-value="15%">
-                    <div class="progress-bar" ><span>15%</span></div>
-                    
-                </div>
-                
-            </div>
-            <div class="skill">
-                <p>Javascript</p>
-                <div class="progress" data-value="80%">
-                    <div class="progress-bar"><span>80%</span></div>
-                    
-                </div>
-                
-            </div>
-            <div class="skill">
-                <p>Java</p>
-                <div class="progress" data-value="70%">
-                    <div class="progress-bar"><span>70%</span></div>
-                </div>
-                
-            </div>
         </div>
         <div class="section" id="backend">
         
@@ -138,18 +143,22 @@
         </div>
     </div>
     <div class="section" id="contact">
-        <h2>Contattami</h2>
-        <form action="/submit_form" method="POST">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Messaggio:</label>
-            <textarea id="message" name="message" required></textarea>
-            <input type="submit" value="Invia">
-        </form>
+        <fieldset class="campo">
+            <legend>Contattami</legend>
+            <form action="/submit_form" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Invia">
+            </form>
+        </fieldset>
+       
+        
     </div>
-    <script>
+  <!--  <script>
         window.addEventListener('DOMContentLoaded', (event) => {
             document.querySelectorAll('.progress').forEach((item) => {
                 let value = item.getAttribute('data-value');
@@ -160,6 +169,6 @@
                 
             });
         })
-    </script>
+    </script>  -->
 </body>
 </html>

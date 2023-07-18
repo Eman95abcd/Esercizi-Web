@@ -19,12 +19,12 @@
     
   }
   
-  /* Container for flexboxes */
+  /* Container for flexboxes
   section {
     display: -webkit-flex;
     display: flex;
     outline: auto;
-  }
+  } */
   
   /* Style the navigation menu */
   nav {
@@ -45,15 +45,21 @@
     outline: auto;
   }
   
-  /* Style the content */
-  article {
+   
+  article {/*
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
     background-color: #f1f1f1;
-    padding: 10px;
+    padding: 10px;*/
     outline: auto;
+  } 
+
+    h1 {
+    padding-top: 20px;
+    
   }
+   
   
   /* Style the footer */
   footer {
@@ -62,6 +68,7 @@
     text-align: center;
     color: white;
     outline: auto;
+    margin-bottom: 20px;
   }
   
   /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
@@ -98,20 +105,21 @@
     display: flex;
     justify-content: center;
   }
-  
+  /*
   section {
     width: 80%;
     align-items: center;
     position: relative;
     left: 12em;
     
-  }
+  }*/
   
   img {
     align-items: center;
     margin: 10px auto;
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   
   textarea {
@@ -135,6 +143,7 @@
   
   i {
     margin-right: 30px;
+    margin-bottom: 20px;
   }
   
   i:hover {
@@ -146,4 +155,7 @@
       transition: 1s;
   }
 
-   
+ .container {
+  height: 100%;
+  padding: 10px;
+ }
