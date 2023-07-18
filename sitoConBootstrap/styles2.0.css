@@ -164,3 +164,7 @@
   position: relative;
   bottom: 4px;
  }
+
+ li {
+  margin: 10px;
+ }
